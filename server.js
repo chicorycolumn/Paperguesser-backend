@@ -11,7 +11,7 @@ app.use(index);
 
 const options = {
   cors: {
-    origins: ["http://127.0.0.1:3000", "https://chattercat.netlify.app/"],
+    origins: ["http://127.0.0.1:3000", "https://paperguesser.netlify.app/"],
     methods: ["GET", "POST"],
   },
 };

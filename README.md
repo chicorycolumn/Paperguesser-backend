@@ -1,4 +1,4 @@
-# Wormplay backend
+# Paperguesser backend
 
 ## Description
 
@@ -13,19 +13,17 @@ The game provides:
 - Realtime connections to allow both players to see each other's in-game action instantly, via a backend server using Express and Socket.IO
 - Checking of valid words during gameplay, via the Oxford English Dictionary API
 
-This was the final project at [Northcoders](https://northcoders.com). It was thought of, designed, developed, and tested all within two weeks. The project started at the beginning of the Covid-19 UK lockdown in 2020, so the team of four collaborated entirely remotely.
-
 ## Instructions
 
-This backend is live on [Heroku](https://wormplayserver.herokuapp.com/).
+This backend will be live on [Heroku](https://paperguesser-server.herokuapp.com/).
 <br/>
-The frontend counterpart repository can be found [here](https://github.com/chicorycolumn/wormplay-FE).
+The frontend counterpart repository can be found [here](https://github.com/chicorycolumn/Paperguesser-frontend).
 <br/>
-The live site is on [Netlify](https://wormplay.netlify.app/).
+The live site will be on [Netlify](https://paperguesser.netlify.app/).
 <br/>
 You can also download this repository and run the project locally by following these steps:
 
-1. Fork this repository by clicking the button labelled 'Fork' on the [project page](https://github.com/nadiarashad/wormplay-BE).
+1. Fork this repository by clicking the button labelled 'Fork' on the [project page](https://github.com/chicorycolumn/Paperguesser-backend).
    <br/>
    Copy the url of your forked copy of the repository, and run `git clone the_url_of_your_forked_copy` in a Terminal window on your computer, replacing the long underscored word with your url.
    <br/>
@@ -61,17 +59,11 @@ Now when you commit and push to Github, Heroku will deploy the latest version of
 
 - [JavaScript](https://www.javascript.com/) - The primary coding language
 - [VisualStudioCode](https://code.visualstudio.com/) - The code editor
-- [Babel](https://babeljs.io/) - The compiler
 
 - [Heroku](https://www.heroku.com/) - The cloud application platform used for the backend
 - [Netlify](https://www.netlify.com/) - The hosting service used for the frontend
 
 - [Socket.IO](https://socket.io/) - The realtime library
-- [Axios](https://github.com/axios/axios) - The HTTP client
-- [Express](http://expressjs.com/) - The web application framework
-- [Lodash](https://lodash.com/) - The utility library
 
-- [Phaser](https://www.phaser.io/) - The game framework
 - [React](https://reactjs.org/) - The frontend framework
-- [TensorFlow](https://www.tensorflow.org/) - The library used by the facial recognition API
 - [CSS Modules](https://github.com/css-modules/css-modules) - The design organisation system
