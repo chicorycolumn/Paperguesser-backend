@@ -2,7 +2,7 @@ const app = require("express")();
 const cors = require("cors");
 const port = process.env.PORT || 4002;
 const index = require("./routes/index");
-const { Player, Room } = require("./utils/classes.js");
+const { Player, Room, Game } = require("./utils/classes.js");
 const dataUtils = require("./utils/dataUtils.js");
 const socketUtils = require("./utils/socketUtils.js");
 

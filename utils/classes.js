@@ -16,6 +16,18 @@ class Room {
   }
 }
 
+class Game {
+  constructor(gameId) {
+    this.gameId = gameId;
+    this.questions = [
+      "What is your favourite colour?",
+      "Which animal best describes you?",
+      "Which is your guilty pleasure food?",
+    ];
+    this.scores = {};
+  }
+}
+
 class Player {
   constructor(truePlayerName, socketId, playerName, stars) {
     this.truePlayerName = truePlayerName;
@@ -36,4 +48,4 @@ class Player {
   }
 }
 
-module.exports = { Room, Player };
+module.exports = { Room, Player, Game };
