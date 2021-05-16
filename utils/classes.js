@@ -24,7 +24,6 @@ class Game {
       "Which animal best describes you?",
       "Which is your guilty pleasure food?",
     ];
-    this.scores = {};
   }
 }
 

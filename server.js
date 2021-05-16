@@ -30,6 +30,19 @@ io.on("connection", (socket) => {
       .slice(17, -4)}.`
   );
 
+  ///////
+
+  socket.on("Send answer", function (data) {
+    let game = rooms.find((roo) => roo.roomName === data.roomName).game;
+
+    if (!game) {
+      console.log("Q21 No such game.");
+      return;
+    }
+  });
+
+  ///////
+
   socket.on("Dev destroy all", function () {
     console.log(`ø DESTROY <${socket.id.slice(0, 4)}>`);
 
