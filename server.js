@@ -1,5 +1,6 @@
 const app = require("express")();
 const cors = require("cors");
+const { getMaxListeners } = require("process");
 const port = process.env.PORT || 4002;
 const index = require("./routes/index");
 const { Player, Room, Game } = require("./utils/classes.js");
@@ -39,6 +40,19 @@ io.on("connection", (socket) => {
       console.log("Q21 No such game.");
       return;
     }
+
+    // game.answers.push(data.answer)
+  });
+
+  socket.on("Send question", function (data) {
+    let game = rooms.find((roo) => roo.roomName === data.roomName).game;
+
+    if (!game) {
+      console.log("Q21 No such game.");
+      return;
+    }
+
+    game.questions.push(data.question);
   });
 
   ///////
