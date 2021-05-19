@@ -55,6 +55,15 @@ io.on("connection", (socket) => {
     game.questions.push(data.question);
   });
 
+  socket.on("Send guess", function (data) {
+    let game = rooms.find((roo) => roo.roomName === data.roomName).game;
+
+    if (!game) {
+      console.log("Q21 No such game.");
+      return;
+    }
+  });
+
   ///////
 
   socket.on("Dev destroy all", function () {
