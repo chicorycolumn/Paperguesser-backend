@@ -22,7 +22,7 @@ class Game {
     this.questions = [
       "What is your favourite colour?",
       "Which animal best describes you?",
-      "Which is your guilty pleasure food?",
+      "Which food is your guilty pleasure?",
     ];
   }
 }

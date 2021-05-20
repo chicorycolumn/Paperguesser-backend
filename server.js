@@ -64,6 +64,15 @@ io.on("connection", (socket) => {
     }
   });
 
+  function startRound(room) {
+    let question =
+      room.game.questions[
+        Math.floor(Math.random() * room.game.questions.length)
+      ];
+
+    let answers = {};
+  }
+
   ///////
 
   socket.on("Dev destroy all", function () {
