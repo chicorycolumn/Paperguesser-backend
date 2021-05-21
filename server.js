@@ -33,17 +33,6 @@ io.on("connection", (socket) => {
 
   ///////
 
-  socket.on("Send answer", function (data) {
-    let game = rooms.find((roo) => roo.roomName === data.roomName).game;
-
-    if (!game) {
-      console.log("Q21 No such game.");
-      return;
-    }
-
-    // game.answers.push(data.answer)
-  });
-
   socket.on("Send question", function (data) {
     let game = rooms.find((roo) => roo.roomName === data.roomName).game;
 
