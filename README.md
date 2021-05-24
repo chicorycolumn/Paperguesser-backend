@@ -8,10 +8,6 @@ The game provides:
 
 - A login and lobby system to find other users online to play against, built with React
 - An in-game chatroom , built with Socket.IO
-- A webcam feature with facial and emotion recognition, built with a facial recognition API
-- A 2D physics game, built with Phaser
-- Realtime connections to allow both players to see each other's in-game action instantly, via a backend server using Express and Socket.IO
-- Checking of valid words during gameplay, via the Oxford English Dictionary API
 
 ## Instructions
 
@@ -19,7 +15,7 @@ This backend will be live on [Heroku](https://paperguesser-server.herokuapp.com/
 <br/>
 The frontend counterpart repository can be found [here](https://github.com/chicorycolumn/Paperguesser-frontend).
 <br/>
-The live site will be on [Netlify](https://paperguesser.netlify.app/).
+The live site will be live on [Netlify](https://paperguesser.netlify.app/).
 <br/>
 You can also download this repository and run the project locally by following these steps:
 
