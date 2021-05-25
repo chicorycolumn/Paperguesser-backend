@@ -60,6 +60,8 @@ io.on("connection", (socket) => {
       ];
 
     let answers = {};
+
+    io.in();
   }
 
   ///////

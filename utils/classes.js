@@ -24,6 +24,8 @@ class Game {
       "Which animal best describes you?",
       "Which food is your guilty pleasure?",
     ];
+    this.pointsTally = {},
+    this.guessedAnswers = {},
   }
 }
 
