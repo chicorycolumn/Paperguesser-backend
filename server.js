@@ -33,37 +33,6 @@ io.on("connection", (socket) => {
 
   ///////
 
-  socket.on("Send question", function (data) {
-    let game = rooms.find((roo) => roo.roomName === data.roomName).game;
-
-    if (!game) {
-      console.log("Q21 No such game.");
-      return;
-    }
-
-    game.questions.push(data.question);
-  });
-
-  socket.on("Send guess", function (data) {
-    let game = rooms.find((roo) => roo.roomName === data.roomName).game;
-
-    if (!game) {
-      console.log("Q21 No such game.");
-      return;
-    }
-  });
-
-  function startRound(room) {
-    let question =
-      room.game.questions[
-        Math.floor(Math.random() * room.game.questions.length)
-      ];
-
-    let answers = {};
-
-    io.in();
-  }
-
   ///////
 
   socket.on("Dev destroy all", function () {
