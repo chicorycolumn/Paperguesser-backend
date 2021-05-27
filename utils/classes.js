@@ -16,19 +16,6 @@ class Room {
   }
 }
 
-class Game {
-  constructor(gameId) {
-    this.gameId = gameId;
-    this.questions = [
-      "What is your favourite colour?",
-      "Which animal best describes you?",
-      "Which food is your guilty pleasure?",
-    ];
-    this.pointsTally = {},
-    this.guessedAnswers = {},
-  }
-}
-
 class Player {
   constructor(truePlayerName, socketId, playerName, stars) {
     this.truePlayerName = truePlayerName;
